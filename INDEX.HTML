@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 후쿠오카 피크닉 1박 2일 완벽 가이드 🌸</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .modal-backdrop {
+            backdrop-filter: blur(8px);
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .section-gradient {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        }
+        
+        .food-gradient {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+        }
+        
+        .culture-gradient {
+            background: linear-gradient(135deg, #a8e6cf, #88d8a3);
+        }
+        
+        .rating-stars {
+            color: #f59e0b;
+        }
+        
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2">🌸 후쿠오카 피크닉 여행 🌸</h1>
+                <p class="text-lg opacity-90">1박 2일 완벽 가이드</p>
+                <div class="mt-4 text-sm">
+                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mr-2">8월 9일-10일</span>
+                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full">일본 큐슈</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-16 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex overflow-x-auto py-3 space-x-4">
+                <a href="#day1" class="flex-shrink-0 px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">1일차</a>
+                <a href="#day2" class="flex-shrink-0 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">2일차</a>
+                <a href="#foods" class="flex-shrink-0 px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">맛집</a>
+                <a href="#culture" class="flex-shrink-0 px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">문화</a>
+                <a href="#tips" class="flex-shrink-0 px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">여행팁</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- 1일차 -->
+        <section id="day1" class="mb-16 scroll-fade">
+            <div class="section-gradient text-white rounded-2xl p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-2"><i class="fas fa-calendar-day mr-3"></i>1일차 - 8월 9일 (토)</h2>
+                <p class="opacity-90">김해공항에서 출발하여 후쿠오카의 핵심 명소들을 둘러보는 하루</p>
+            </div>
+
+            <!-- 항공편 정보 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-plane text-blue-500 text-2xl mr-4"></i>
+                    <div>
+                        <h3 class="text-xl font-bold">김해공항 → 후쿠오카</h3>
+                        <p class="text-gray-600">BX148 | 05:30 출발 → 07:30 도착 (현지시간)</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2"><i class="fas fa-info-circle mr-2"></i>공항 도착 후 팁</h4>
+                    <ul class="space-y-1 text-sm">
+                        <li>• 후쿠오카 지하철 공항선으로 시내까지 약 15분</li>
+                        <li>• 공항 내 환전소에서 일본 엔화로 환전 가능</li>
+                        <li>• IC카드(하야카켄) 구매 추천</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 쿠시다 신사 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover cursor-pointer" onclick="openModal('kushida')">
+                <div class="flex flex-col md:flex-row">
+                    <img src="https://gofukuoka.jp/files/Articles/46ea3f83-bfa2-4c34-bb8c-9f1a053d0db4/image/4279e5e7fc49d4faf73d050f33d5fa39.jpg" alt="쿠시다 신사" class="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">🏛️ 쿠시다 신사 (櫛田神社)</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded mr-2">유네스코 무형문화유산</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">하카타의 수호신</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">700년 역사의 하카타 기온 야마카사 축제로 유명한 후쿠오카의 대표 신사</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">📸 사진스팟</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">🎭 전통축제</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded">🌸 절분대제</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 오호리 공원 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover cursor-pointer" onclick="openModal('ohori')">
+                <div class="flex flex-col md:flex-row">
+                    <img src="https://japaholic.kr/wp-content/uploads/2024/11/05-3.jpg" alt="오호리 공원" class="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">🌊 오호리 공원 (大濠公園)</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mr-2">자연공원</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">후쿠오카 성터</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">후쿠오카 성의 외호를 활용한 아름다운 호수 공원, 2km 산책로와 일본정원 보유</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">🚶‍♂️ 산책로</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">🛶 보트체험</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">🦆 야생조류</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 쇼후쿠지 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover cursor-pointer" onclick="openModal('shofukuji')">
+                <div class="flex flex-col md:flex-row">
+                    <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/9ef9e340-b871-4a7e-8ae3-972d5a434df1.jpeg" alt="쇼후쿠지" class="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">⛩️ 쇼후쿠지 (聖福寺)</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded mr-2">일본 최초</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">선종 사찰</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">12세기 말 에이사이가 개산한 일본 최초의 선종 사찰, 900년 역사의 중요문화재</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded">🏛️ 국가사적</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">🧘‍♂️ 선수행</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">📚 역사체험</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2일차 -->
+        <section id="day2" class="mb-16 scroll-fade">
+            <div class="culture-gradient text-white rounded-2xl p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-2"><i class="fas fa-calendar-day mr-3"></i>2일차 - 8월 10일 (일)</h2>
+                <p class="opacity-90">다자이후와 모던 후쿠오카의 매력을 동시에 경험하는 하루</p>
+            </div>
+
+            <!-- 다자이부 텐만구 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover cursor-pointer" onclick="openModal('dazaifu')">
+                <div class="flex flex-col md:flex-row">
+                    <img src="https://www.crossroadfukuoka.jp/storage/tourism_attractions/12546/responsive_images/NOSzAst3syNbl5rQOuYrQfs0ZxAli6bJziXAH9rh__1653_1102.jpg" alt="다자이부 텐만구" class="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">📚 다자이부 텐만구 (太宰府天満宮)</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-2">학문의 신</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">국가중요문화재</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">스가와라 미치자네를 모신 전국 10,000개 텐만구의 총본궁, 연간 1000만 참배객</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded">🌸 매화명소</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">🍡 우메가에모치</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">🙏 합격기원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 후쿠오카 타워 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover cursor-pointer" onclick="openModal('tower')">
+                <div class="flex flex-col md:flex-row">
+                    <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_2048,w_2048/9a7ada21-4a2b-4df9-8b51-9c2d321621a3.jpeg" alt="후쿠오카 타워" class="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">🗼 후쿠오카 타워 (福岡タワー)</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-2">234m 높이</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">해안 최고 타워</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">정삼각형 구조의 독특한 디자인, 8천여 장의 하프미러로 장식된 랜드마크</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">🌃 야경명소</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded">💕 연인성지</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">📸 전망대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 시사이드 모모치 해변 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover cursor-pointer" onclick="openModal('momochi')">
+                <div class="flex flex-col md:flex-row">
+                    <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/1289a290-de8d-4358-a4af-2b9769eb2de0.jpeg" alt="시사이드 모모치 해변" class="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">🏖️ 시사이드 모모치 해변</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-2">인공해변</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">도심 리조트</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">하와이산 모래로 조성된 도심 속 인공해변, 해변가 카페와 리조트 분위기</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">☕ 해변카페</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded">🏐 비치스포츠</span>
+                            <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded">🌅 석양명소</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 귀국 항공편 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 card-hover">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-plane-departure text-green-500 text-2xl mr-4"></i>
+                    <div>
+                        <h3 class="text-xl font-bold">후쿠오카 → 김해공항</h3>
+                        <p class="text-gray-600">BX143 | 19:55 출발 → 21:00 도착</p>
+                    </div>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2"><i class="fas fa-shopping-bag mr-2"></i>마지막 쇼핑</h4>
+                    <ul class="space-y-1 text-sm">
+                        <li>• 후쿠오카 공항 면세점에서 기념품 구매</li>
+                        <li>• 하카타 라멘 인스턴트 면류 추천</li>
+                        <li>• 일본 전통 과자 및 화장품</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 맛집 가이드 -->
+        <section id="foods" class="mb-16 scroll-fade">
+            <div class="food-gradient text-white rounded-2xl p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-2"><i class="fas fa-utensils mr-3"></i>후쿠오카 맛집 완전정복</h2>
+                <p class="opacity-90">현지인이 인정한 진짜 후쿠오카 맛을 경험해보세요</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 이치란 라멘 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer" onclick="openModal('ichiran')">
+                    <img src="https://oncuration.com/wp-content/uploads/2023/02/%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%9D%BC%EB%A9%98-%EC%8B%A0%EC%8B%A0%EB%9D%BC%EB%A9%98-16-9.jpg" alt="이치란 라멘" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold mb-2">🍜 이치란 라멘</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">4.5/5</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">후쿠오카 대표 돈코츠 라멘 전문점, 개인 부스로 집중해서 맛볼 수 있음</p>
+                    <div class="flex flex-wrap gap-1 text-xs">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">24시간</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">커스터마이징</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">본점</span>
+                    </div>
+                </div>
+
+                <!-- 모츠나베 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer" onclick="openModal('motsunabe')">
+                    <img src="https://rimage.savorjapan.com/svj/image/discover_oishii_japan/1411/article_269627_w640z.jpg" alt="모츠나베" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold mb-2">🍲 모츠나베 (곱창전골)</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">4.6/5</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">후쿠오카 명물 곱창 전골, 간장·된장·소금 3가지 맛으로 즐김</p>
+                    <div class="flex flex-wrap gap-1 text-xs">
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded">향토음식</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded">겨울별미</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">단체추천</span>
+                    </div>
+                </div>
+
+                <!-- 야타이 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer" onclick="openModal('yatai')">
+                    <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/3dffd3bd-ed92-4812-836e-27ddc927ee7d.jpeg" alt="야타이" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold mb-2">🏮 야타이 (포장마차)</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">4.2/5</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">나카스 강변의 전통 포장마차, 분위기 좋은 야경과 함께 즐기는 술집</p>
+                    <div class="flex flex-wrap gap-1 text-xs">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">나카스강변</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">야경명소</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">전통체험</span>
+                    </div>
+                </div>
+
+                <!-- 우메가에모치 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover cursor-pointer" onclick="openModal('umegaemochi')">
+                    <img src="https://www.crossroadfukuoka.jp/storage/tourism_attractions/11380/responsive_images/uOwGH0LhsfqkcFTBk8H7Qh13rh4GnmKP3VNvrwVZ__1790_1193.jpg" alt="우메가에모치" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold mb-2">🍡 우메가에모치 (매화떡)</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">4.7/5</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">다자이부 명물 팥소 들어간 구운 떡, 150년 전통의 카사노야가 유명</p>
+                    <div class="flex flex-wrap gap-1 text-xs">
+                        <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded">다자이부명물</span>
+                        <span class="bg-brown-100 text-brown-800 px-2 py-1 rounded">전통과자</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded">갓구운맛</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 문화체험 -->
+        <section id="culture" class="mb-16 scroll-fade">
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-2xl p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-2"><i class="fas fa-torii-gate mr-3"></i>후쿠오카 문화 체험</h2>
+                <p class="opacity-90">천년의 역사와 전통이 살아숨쉬는 후쿠오카의 문화적 깊이를 느껴보세요</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-dragon text-red-500 text-3xl"></i>
+                        <h3 class="text-lg font-bold mt-2">하카타 기온 야마카사</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center mb-4">700년 역사의 유네스코 무형문화유산</p>
+                    <ul class="text-xs space-y-1">
+                        <li>• 매년 7월 1일~15일 개최</li>
+                        <li>• 총 7기의 야마카사가 5km 질주</li>
+                        <li>• 쿠시다 신사에서 장식 야마카사 상시 전시</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-graduation-cap text-blue-500 text-3xl"></i>
+                        <h3 class="text-lg font-bold mt-2">학문의 신 참배</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center mb-4">스가와라 미치자네의 전설</p>
+                    <ul class="text-xs space-y-1">
+                        <li>• 합격 기원과 학업 성취</li>
+                        <li>• 비매(飛梅) 전설의 매화나무</li>
+                        <li>• 심자지(心字池)의 삼세일념</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-temple text-orange-500 text-3xl"></i>
+                        <h3 class="text-lg font-bold mt-2">선종 문화</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center mb-4">일본 최초의 선종 사찰</p>
+                    <ul class="text-xs space-y-1">
+                        <li>• 에이사이 스님이 개산</li>
+                        <li>• 국가 사적으로 지정</li>
+                        <li>• 선(禪) 수행의 정신 체험</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 여행 팁 -->
+        <section id="tips" class="mb-16 scroll-fade">
+            <div class="bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-2xl p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-2"><i class="fas fa-lightbulb mr-3"></i>후쿠오카 여행 완전 팁</h2>
+                <p class="opacity-90">현지인만 아는 꿀팁으로 더욱 알찬 여행을 만들어보세요</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4 text-blue-600"><i class="fas fa-subway mr-2"></i>교통 팁</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>하야카켄 IC카드로 지하철·버스 이용</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>텐진-하카타 도보 20분 거리</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>다자이부는 니시테츠 전철 이용</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>공항-하카타역 지하철 5분</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4 text-green-600"><i class="fas fa-shopping-cart mr-2"></i>쇼핑 팁</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>텐진 지하상가 - 일본 최대 규모</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>캐널시티 하카타 - 분수쇼 감상</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>돈키호테 나카스점 - 24시간</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>면세 한도 5,000엔 이상</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4 text-red-600"><i class="fas fa-utensils mr-2"></i>맛집 팁</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>이치란 라멘 - 개인 부스 체험 필수</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>야타이 - 오후 6시 이후 오픈</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>모츠나베 - 겨울철 특히 인기</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>현금 준비 (일부 가게 카드 불가)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4 text-purple-600"><i class="fas fa-camera mr-2"></i>사진 팁</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>후쿠오카 타워 야경 - 일몰 1시간 전 도착</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>오호리 공원 - 우키미도 정자가 포토스팟</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>다자이부 - 매화 시즌(1~3월) 최고</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>야타이 - 강변 야경과 함께 촬영</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 모달들 -->
+    <!-- 쿠시다 신사 모달 -->
+    <div id="modal-kushida" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center">
+                <h2 class="text-2xl font-bold">🏛️ 쿠시다 신사 완전 가이드</h2>
+                <button onclick="closeModal('kushida')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+            
+            <div class="p-6">
+                <img src="https://enjoy-kyushu.com/wp-content/uploads/2024/03/5___004img0287%EF%BC%88%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE-1440x720.jpg" alt="쿠시다 신사" class="w-full h-64 object-cover rounded-lg mb-6">
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-red-600">🏛️ 역사적 배경</h3>
+                        <div class="space-y-3 text-sm">
+                            <p><strong>설립:</strong> 하카타의 총진수로서 '오쿠시다상'이라는 애칭으로 사랑받음</p>
+                            <p><strong>신앙:</strong> 불로장수, 장사번성의 신으로 믿어져 온 하카타의 수호신</p>
+                            <p><strong>상징:</strong> 경내 입구의 '구시다의 은행나무'는 수령 1,000년 이상의 현 지정 천연기념물</p>
+                            <p><strong>영험:</strong> '영천학우물(霊泉鶴の井戸)'은 장수연명의 상징, 불로장생의 물</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-600">🎭 하카타 기온 야마카사</h3>
+                        <div class="space-y-3 text-sm">
+                            <p><strong>유네스코 무형문화유산:</strong> 700년 이상의 역사를 가진 전통축제</p>
+                            <p><strong>개최 시기:</strong> 매년 7월 1일~15일</p>
+                            <p><strong>하이라이트:</strong> 7월 15일 새벽 4시 59분 오이야마카사 시작</p>
+                            <p><strong>볼거리:</strong> 10수 미터 높이의 호화로운 장식 야마카사 전시</p>
+                            <p><strong>피날레:</strong> 총 7기의 야마카사가 약 5km 코스를 질주</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-orange-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-3 text-orange-600">🌸 연중 축제</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p><strong>절분대제 (2월):</strong> 일본 최대의 '오타후쿠 가면' 장식, 콩 뿌리기 행사</p>
+                            <p><strong>하카타 오쿤치 (10월):</strong> 우차가 이끄는 신가마 행렬, 하카타 가을 풍물시</p>
+                        </div>
+                        <div>
+                            <p><strong>새해 참배:</strong> 누문 천장의 12간지 그림, 신년 길한 방향 표시</p>
+                            <p><strong>가을 단풍:</strong> 1,000년 은행나무의 황금빛 단풍이 아름다움</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-green-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-3 text-green-600">📸 사진 스팟 & 방문 정보</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p><strong>📍 위치:</strong> 후쿠오카시 하카타구 우에가와바타마치 1-41</p>
+                            <p><strong>🕐 개문시간:</strong> 4:00~22:00 (사무소: 9:00~17:00)</p>
+                            <p><strong>🚇 교통:</strong> 하카타역에서 지하철/버스로 약 30분</p>
+                        </div>
+                        <div>
+                            <p><strong>📸 포토스팟:</strong> 장식 야마카사, 1,000년 은행나무, 누문</p>
+                            <p><strong>🎫 입장료:</strong> 무료</p>
+                            <p><strong>📞 문의:</strong> 092-291-2951</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 오호리 공원 모달 -->
+    <div id="modal-ohori" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center">
+                <h2 class="text-2xl font-bold">🌊 오호리 공원 완전 가이드</h2>
+                <button onclick="closeModal('ohori')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+            
+            <div class="p-6">
+                <img src="https://gofukuoka.jp/files/Articles/b25eae20-8f9c-435b-a1d0-0ebff7be82da/image/6becc4ad2408de7f9959c95feee46cbd.jpg" alt="오호리 공원" class="w-full h-64 object-cover rounded-lg mb-6">
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-600">🏰 역사적 배경</h3>
+                        <div class="space-y-3 text-sm">
+                            <p><strong>원래 모습:</strong> 후쿠오카 성의 외호(外濠)로 성을 지키는 역할</p>
+                            <p><strong>개원:</strong> 1982년, 참호를 살려 공원으로 조성</p>
+                            <p><strong>설계:</strong> 하카타만으로 이어지던 습지를 매립하여 정비</p>
+                            <p><strong>현재:</strong> 후쿠오카 시민들의 대표적인 휴식 공간</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-green-600">🌿 공원 특징</h3>
+                        <div class="space-y-3 text-sm">
+                            <p><strong>규모:</strong> 공원의 반이 연못으로 구성</p>
+                            <p><strong>산책로:</strong> 연못 주변 약 2km의 정비된 트랙</p>
+                            <p><strong>야생조류:</strong> '야생조류의 섬'으로 불리는 철새 휴식지</p>
+                            <p><strong>시설:</strong> 일본정원, 전통가무극장, 어린이놀이터</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-3 text-blue-600">🏛️ 주요 볼거리</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p><strong>우키미도 정자:</strong> 공원 내 섬에 위치한 전통 정자</p>
+                            <p><strong>4개의 다리:</strong> 중앙 섬을 연결하는 아름다운 다리들</p>
+                            <p><strong>만요가비:</strong> "아라쓰의 항구" 노래가 새겨진 역사적 비석</p>
+                        </div>
+                        <div>
+                            <p><strong>일본정원:</strong> 전통 일본 정원 양식의 아름다운 조경</p>
+                            <p><strong>보트 체험:</strong> 오리보트와 노젓기 보트 대여 가능</p>
+                            <p><strong>후쿠오카 성터:</strong> 근거리의 역사적 명소</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-green-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-3 text-green-600">🍽️ 맛집 & 카페</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p><strong>보트하우스 오호리파크:</strong> 2015년 새단장, 물가 조망 식당</p>
+                            <p><strong>로열가든카페:</strong> 1층 위치, 캐주얼한 분위기</p>
+                        </div>
+                        <div>
+                            <p><strong>하나노키:</strong> 2층 프랑스 레스토랑, 역사 깊은 명소</p>
+                            <p><strong>산책 후 휴식:</strong> 연못 물가 벤치에서 여유 시간</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기타 모달들도 비슷한 패턴으로... (간소화) -->
+
+    <!-- 다자이부 모달 -->
+    <div id="modal-dazaifu" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center">
+                <h2 class="text-2xl font-bold">📚 다자이부 텐만구 완전 가이드</h2>
+                <button onclick="closeModal('dazaifu')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+            
+            <div class="p-6">
+                <img src="https://enjoy-kyushu.com/wp-content/uploads/2024/03/3___002%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE06-1440x720.jpg" alt="다자이부 텐만구" class="w-full h-64 object-cover rounded-lg mb-6">
+                
+                <div class="space-y-4 text-sm">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-blue-600 mb-2">🎓 학문의 신 스가와라 미치자네</h3>
+                        <p>헤이안시대의 학자이자 정치가로, 뛰어난 학문적 재능과 시재로 유명. 정치적 음모로 다자이부에 좌천되어 903년 생을 마감한 후, 학문의 신으로 추앙받게 됨.</p>
+                    </div>
+                    
+                    <div class="bg-pink-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-pink-600 mb-2">🌸 비매(飛梅)의 전설</h3>
+                        <p>미치자네가 다자이부로 떠날 때 "동풍이 불면 향기를 보내다오, 매화야. 주인이 없다고 봄을 잊지 말아라"라고 읊은 매화나무가 하룻밤 사이에 교토에서 날아와 뿌리를 내렸다는 전설의 나무.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이치란 라멘 모달 -->
+    <div id="modal-ichiran" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center">
+                <h2 class="text-2xl font-bold">🍜 이치란 라멘 완전 가이드</h2>
+                <button onclick="closeModal('ichiran')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+            
+            <div class="p-6">
+                <img src="https://oncuration.com/wp-content/uploads/2023/02/%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%9D%BC%EB%A9%98-%EC%8B%A0%EC%8B%A0%EB%9D%BC%EB%A9%98-%EB%B3%B8%EC%A0%90.jpg" alt="이치란 라멘" class="w-full h-64 object-cover rounded-lg mb-6">
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-red-600 mb-2">🏮 브랜드 역사</h3>
+                        <p class="text-sm">1960년 후쿠오카에서 '후타바 라멘'으로 시작하여 현재의 이치란으로 발전. 후쿠오카를 대표하는 돈코츠 라멘 전문점으로 전 세계에 매장을 확장.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-yellow-600 mb-2">🍜 라멘 특징</h3>
+                        <p class="text-sm">개인 부스 시스템으로 라멘에 집중할 수 있는 환경 제공. 맛, 기름진정도, 마늘, 파, 차슈, 맵기, 면의 익힘 정도 등 7가지 커스터마이징 가능.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기타 간단한 모달들 -->
+    <div id="modal-shofukuji" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">⛩️ 쇼후쿠지</h2>
+                <button onclick="closeModal('shofukuji')" class="text-2xl">&times;</button>
+            </div>
+            <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/9ef9e340-b871-4a7e-8ae3-972d5a434df1.jpeg" alt="쇼후쿠지" class="w-full h-48 object-cover rounded-lg mb-4">
+            <p class="text-sm">12세기 말 에이사이가 개산한 일본 최초의 선종 사찰로, 900년의 역사를 자랑하는 국가 사적입니다.</p>
+        </div>
+    </div>
+
+    <div id="modal-tower" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">🗼 후쿠오카 타워</h2>
+                <button onclick="closeModal('tower')" class="text-2xl">&times;</button>
+            </div>
+            <img src="https://www.fukuokatower.co.jp/img/viewroom/night/introduction-slider-03.jpg" alt="후쿠오카 타워 야경" class="w-full h-48 object-cover rounded-lg mb-4">
+            <p class="text-sm">높이 234m의 정삼각형 구조로 설계된 후쿠오카의 랜드마크. 123m 높이의 전망대에서 후쿠오카 시내와 하카타만의 파노라마 뷰를 감상할 수 있습니다.</p>
+        </div>
+    </div>
+
+    <div id="modal-momochi" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">🏖️ 시사이드 모모치 해변</h2>
+                <button onclick="closeModal('momochi')" class="text-2xl">&times;</button>
+            </div>
+            <img src="https://storage.googleapis.com/ikidane/upload/spot_943_28229_1d86173450/spot_943_28229_1d86173450.jpg" alt="모모치 해변" class="w-full h-48 object-cover rounded-lg mb-4">
+            <p class="text-sm">하와이산 모래로 조성된 인공해변으로, 도심 속에서 리조트 분위기를 만끽할 수 있는 곳입니다.</p>
+        </div>
+    </div>
+
+    <div id="modal-motsunabe" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">🍲 모츠나베</h2>
+                <button onclick="closeModal('motsunabe')" class="text-2xl">&times;</button>
+            </div>
+            <img src="https://gofukuoka.jp/files/Articles/c3b1bc9b-d80b-4502-a68d-560213256423/image/7ad9397481a5488bfd5b2099b0aadea4.jpg" alt="모츠나베" class="w-full h-48 object-cover rounded-lg mb-4">
+            <p class="text-sm">후쿠오카 명물 곱창 전골로, 간장·된장·소금 베이스의 3가지 맛을 즐길 수 있습니다.</p>
+        </div>
+    </div>
+
+    <div id="modal-yatai" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">🏮 야타이</h2>
+                <button onclick="closeModal('yatai')" class="text-2xl">&times;</button>
+            </div>
+            <img src="https://www.crossroadfukuoka.jp/storage/special_feature_paragraphs/72/responsive_images/i7dnRPRAs2mYbTaG5PBn3y0dmr7HynrFPvoGFkLE__1673_1116.jpg" alt="야타이" class="w-full h-48 object-cover rounded-lg mb-4">
+            <p class="text-sm">나카스 강변에 위치한 전통 포장마차로, 후쿠오카의 야경과 함께 현지 음식을 즐길 수 있습니다.</p>
+        </div>
+    </div>
+
+    <div id="modal-umegaemochi" class="hidden fixed inset-0 modal-backdrop z-50 p-4">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">🍡 우메가에모치</h2>
+                <button onclick="closeModal('umegaemochi')" class="text-2xl">&times;</button>
+            </div>
+            <img src="https://tenjinsite.jp/upload/itopic_photo/900x506_img_tid224_0.jpg" alt="우메가에모치" class="w-full h-48 object-cover rounded-lg mb-4">
+            <p class="text-sm">다자이부 명물 매화떡으로, 팥앙금을 얇은 떡 반죽으로 감싸 매화 표시를 찍어 구워낸 전통과자입니다.</p>
+        </div>
+    </div>
+
+    <!-- 플로팅 버튼 -->
+    <div class="floating-btn">
+        <button onclick="scrollToTop()" class="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all pulse-animation">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script>
+        // 모달 제어
+        function openModal(modalId) {
+            document.getElementById('modal-' + modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById('modal-' + modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // 모달 외부 클릭 시 닫기
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal-backdrop')) {
+                e.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // 스크롤 애니메이션
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.scroll-fade');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        // 맨 위로 스크롤
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 부드러운 스크롤 네비게이션
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 이벤트 리스너
+        window.addEventListener('scroll', handleScrollAnimation);
+        window.addEventListener('load', handleScrollAnimation);
+
+        // 초기 애니메이션
+        document.addEventListener('DOMContentLoaded', function() {
+            handleScrollAnimation();
+        });
+    </script>
+</body>
+</html>
